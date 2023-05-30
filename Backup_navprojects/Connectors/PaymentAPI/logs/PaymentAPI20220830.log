@@ -1,0 +1,505 @@
+[2022-08-30 16:27:29.285 +05:30  INF]  Now listening on: https://localhost:7291
+[2022-08-30 16:27:29.353 +05:30  INF]  Now listening on: http://localhost:5291
+[2022-08-30 16:27:29.358 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2022-08-30 16:27:29.359 +05:30  INF]  Hosting environment: Development
+[2022-08-30 16:27:29.359 +05:30  INF]  Content root path: C:\DFX GIT Workspace\navprojects\Connectors\PaymentAPI\PaymentAPI\
+[2022-08-30 16:27:30.705 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7291/swagger - -
+[2022-08-30 16:27:31.033 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7291/swagger - - - 301 0 - 334.0171ms
+[2022-08-30 16:27:31.086 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7291/swagger/index.html - -
+[2022-08-30 16:27:31.553 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7291/swagger/index.html - - - 200 - text/html;charset=utf-8 467.0469ms
+[2022-08-30 16:27:31.572 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7291/swagger/swagger-ui-standalone-preset.js - -
+[2022-08-30 16:27:31.576 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7291/swagger/swagger-ui-bundle.js - -
+[2022-08-30 16:27:31.578 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7291/swagger/swagger-ui.css - -
+[2022-08-30 16:27:31.580 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7291/_framework/aspnetcore-browser-refresh.js - -
+[2022-08-30 16:27:31.690 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7291/_framework/aspnetcore-browser-refresh.js - - - 200 11978 application/javascript;+charset=utf-8 111.2904ms
+[2022-08-30 16:27:31.877 +05:30  INF]  Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+[2022-08-30 16:27:31.961 +05:30  INF]  Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+[2022-08-30 16:27:31.961 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7291/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 389.3336ms
+[2022-08-30 16:27:31.994 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7291/swagger/swagger-ui.css - - - 200 143632 text/css 416.6389ms
+[2022-08-30 16:27:32.072 +05:30  INF]  Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+[2022-08-30 16:27:32.073 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7291/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 496.0770ms
+[2022-08-30 16:27:32.404 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7291/swagger/v1/swagger.json - -
+[2022-08-30 16:27:32.480 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7291/swagger/favicon-32x32.png - -
+[2022-08-30 16:27:32.482 +05:30  INF]  Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+[2022-08-30 16:27:32.482 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7291/swagger/favicon-32x32.png - - - 200 628 image/png 1.8392ms
+[2022-08-30 16:27:32.555 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7291/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 151.6229ms
+[2022-08-30 16:27:48.464 +05:30  INF]  Request starting HTTP/2 POST https://localhost:7291/api/NavOnePaymentAPI/CreatePayment?ClientNo=12333 - 0
+[2022-08-30 16:27:48.474 +05:30  INF]  CORS policy execution successful.
+[2022-08-30 16:27:48.479 +05:30  INF]  Executing endpoint 'PaymentAPI.Controllers.NavOnePaymentAPI.CreatePayment (PaymentAPI)'
+[2022-08-30 16:27:48.514 +05:30  INF]  Route matched with {action = "CreatePayment", controller = "NavOnePaymentAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreatePayment(System.String) on controller PaymentAPI.Controllers.NavOnePaymentAPI (PaymentAPI).
+[2022-08-30 16:27:48.563 +05:30  INF]  Create Payment
+[2022-08-30 16:27:50.018 +05:30  ERR]  Create Payment:Error Inner Exception:{ex.InnerException}
+System.ServiceModel.FaultException: The Client does not exist. Identification fields and values: Client No.='12333'
+   at System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   at System.ServiceModel.Channels.ServiceChannel.EndCall(String action, Object[] outs, IAsyncResult result)
+   at System.ServiceModel.Channels.ServiceChannelProxy.TaskCreator.<>c__DisplayClass1_0.<CreateGenericTask>b__0(IAsyncResult asyncResult)
+--- End of stack trace from previous location ---
+   at PaymentAPI.Controllers.NavOnePaymentAPI.CreatePayment(String ClientNo) in C:\DFX GIT Workspace\navprojects\Connectors\PaymentAPI\PaymentAPI\Controllers\NavOnePaymentAPI.cs:line 37
+[2022-08-30 16:27:50.110 +05:30  INF]  Executing BadRequestObjectResult, writing value of type 'System.String'.
+[2022-08-30 16:27:50.119 +05:30  INF]  Executed action PaymentAPI.Controllers.NavOnePaymentAPI.CreatePayment (PaymentAPI) in 1598.6462ms
+[2022-08-30 16:27:50.120 +05:30  INF]  Executed endpoint 'PaymentAPI.Controllers.NavOnePaymentAPI.CreatePayment (PaymentAPI)'
+[2022-08-30 16:27:50.121 +05:30  INF]  Request finished HTTP/2 POST https://localhost:7291/api/NavOnePaymentAPI/CreatePayment?ClientNo=12333 - 0 - 400 - text/plain;+charset=utf-8 1656.3928ms
+[2022-08-30 17:04:09.416 +05:30  INF]  Now listening on: https://localhost:7291
+[2022-08-30 17:04:09.462 +05:30  INF]  Now listening on: http://localhost:5291
+[2022-08-30 17:04:09.470 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2022-08-30 17:04:09.471 +05:30  INF]  Hosting environment: Development
+[2022-08-30 17:04:09.471 +05:30  INF]  Content root path: C:\DFX GIT Workspace\navprojects\Connectors\PaymentAPI\PaymentAPI\
+[2022-08-30 17:04:10.941 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7291/swagger/index.html - -
+[2022-08-30 17:04:11.559 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7291/swagger/index.html - - - 200 - text/html;charset=utf-8 619.4814ms
+[2022-08-30 17:04:11.632 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7291/_framework/aspnetcore-browser-refresh.js - -
+[2022-08-30 17:04:11.637 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7291/_framework/aspnetcore-browser-refresh.js - - - 200 11978 application/javascript;+charset=utf-8 4.5720ms
+[2022-08-30 17:04:11.963 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7291/swagger/v1/swagger.json - -
+[2022-08-30 17:04:12.083 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7291/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 119.6860ms
+[2022-08-30 17:06:08.726 +05:30  INF]  Request starting HTTP/2 POST https://localhost:7291/api/NavOnePaymentAPI/Convert Prospect to Owner?ProspectNo=1222&DateAgreementSent=212&DateAgreementReceived=12323&ClientAgreementDated=23232&EntityNo=2323 - 0
+[2022-08-30 17:06:08.732 +05:30  INF]  CORS policy execution successful.
+[2022-08-30 17:06:08.737 +05:30  INF]  Executing endpoint 'PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI)'
+[2022-08-30 17:06:08.777 +05:30  INF]  Route matched with {action = "ConvertProspecttoOwner", controller = "NavOnePaymentAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ConvertProspecttoOwner(System.String, System.DateTime, System.DateTime, System.DateTime, System.String) on controller PaymentAPI.Controllers.NavOnePaymentAPI (PaymentAPI).
+[2022-08-30 17:06:08.822 +05:30  INF]  Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+[2022-08-30 17:06:08.831 +05:30  INF]  Executed action PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI) in 50.088ms
+[2022-08-30 17:06:08.832 +05:30  INF]  Executed endpoint 'PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI)'
+[2022-08-30 17:06:08.832 +05:30  INF]  Request finished HTTP/2 POST https://localhost:7291/api/NavOnePaymentAPI/Convert Prospect to Owner?ProspectNo=1222&DateAgreementSent=212&DateAgreementReceived=12323&ClientAgreementDated=23232&EntityNo=2323 - 0 - 400 - application/problem+json;+charset=utf-8 106.9055ms
+[2022-08-30 17:11:57.671 +05:30  INF]  Request starting HTTP/2 POST https://localhost:7291/api/NavOnePaymentAPI/Convert Prospect to Owner?ProspectNo=1&DateAgreementSent=2001-03-09&DateAgreementReceived=2002-03-06&ClientAgreementDated=1999-01-03&EntityNo=E000000001 - 0
+[2022-08-30 17:11:57.688 +05:30  INF]  CORS policy execution successful.
+[2022-08-30 17:11:57.688 +05:30  INF]  Executing endpoint 'PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI)'
+[2022-08-30 17:11:57.688 +05:30  INF]  Route matched with {action = "ConvertProspecttoOwner", controller = "NavOnePaymentAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ConvertProspecttoOwner(System.String, System.DateTime, System.DateTime, System.DateTime, System.String) on controller PaymentAPI.Controllers.NavOnePaymentAPI (PaymentAPI).
+[2022-08-30 17:11:57.737 +05:30  INF]  ConvertProspecttoOwner:Entering
+[2022-08-30 17:11:59.711 +05:30  ERR]  ConvertProspecttoOwner:Error Inner Exception:{ex.InnerException}
+System.ServiceModel.FaultException: The CM-Prospect does not exist. Identification fields and values: No.='1'
+   at System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   at System.ServiceModel.Channels.ServiceChannel.EndCall(String action, Object[] outs, IAsyncResult result)
+   at System.ServiceModel.Channels.ServiceChannelProxy.TaskCreator.<>c__DisplayClass1_0.<CreateGenericTask>b__0(IAsyncResult asyncResult)
+--- End of stack trace from previous location ---
+   at PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner(String ProspectNo, DateTime DateAgreementSent, DateTime DateAgreementReceived, DateTime ClientAgreementDated, String EntityNo) in C:\DFX GIT Workspace\navprojects\Connectors\PaymentAPI\PaymentAPI\Controllers\NavOnePaymentAPI.cs:line 105
+[2022-08-30 17:11:59.826 +05:30  INF]  Executing BadRequestObjectResult, writing value of type 'System.String'.
+[2022-08-30 17:11:59.828 +05:30  INF]  Executed action PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI) in 2135.2527ms
+[2022-08-30 17:11:59.829 +05:30  INF]  Executed endpoint 'PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI)'
+[2022-08-30 17:11:59.831 +05:30  INF]  Request finished HTTP/2 POST https://localhost:7291/api/NavOnePaymentAPI/Convert Prospect to Owner?ProspectNo=1&DateAgreementSent=2001-03-09&DateAgreementReceived=2002-03-06&ClientAgreementDated=1999-01-03&EntityNo=E000000001 - 0 - 400 - text/plain;+charset=utf-8 2159.4318ms
+[2022-08-30 17:12:13.512 +05:30  INF]  Request starting HTTP/2 POST https://localhost:7291/api/NavOnePaymentAPI/Convert Prospect to Owner?ProspectNo=0&DateAgreementSent=2001-03-09&DateAgreementReceived=2002-03-06&ClientAgreementDated=1999-01-03&EntityNo=E000000001 - 0
+[2022-08-30 17:12:13.515 +05:30  INF]  CORS policy execution successful.
+[2022-08-30 17:12:13.515 +05:30  INF]  Executing endpoint 'PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI)'
+[2022-08-30 17:12:13.515 +05:30  INF]  Route matched with {action = "ConvertProspecttoOwner", controller = "NavOnePaymentAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ConvertProspecttoOwner(System.String, System.DateTime, System.DateTime, System.DateTime, System.String) on controller PaymentAPI.Controllers.NavOnePaymentAPI (PaymentAPI).
+[2022-08-30 17:12:13.516 +05:30  INF]  ConvertProspecttoOwner:Entering
+[2022-08-30 17:12:13.627 +05:30  ERR]  ConvertProspecttoOwner:Error Inner Exception:{ex.InnerException}
+System.ServiceModel.FaultException: The CM-Prospect does not exist. Identification fields and values: No.='0'
+   at System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   at System.ServiceModel.Channels.ServiceChannel.EndCall(String action, Object[] outs, IAsyncResult result)
+   at System.ServiceModel.Channels.ServiceChannelProxy.TaskCreator.<>c__DisplayClass1_0.<CreateGenericTask>b__0(IAsyncResult asyncResult)
+--- End of stack trace from previous location ---
+   at PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner(String ProspectNo, DateTime DateAgreementSent, DateTime DateAgreementReceived, DateTime ClientAgreementDated, String EntityNo) in C:\DFX GIT Workspace\navprojects\Connectors\PaymentAPI\PaymentAPI\Controllers\NavOnePaymentAPI.cs:line 105
+[2022-08-30 17:12:13.628 +05:30  INF]  Executing BadRequestObjectResult, writing value of type 'System.String'.
+[2022-08-30 17:12:13.628 +05:30  INF]  Executed action PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI) in 112.1488ms
+[2022-08-30 17:12:13.628 +05:30  INF]  Executed endpoint 'PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI)'
+[2022-08-30 17:12:13.629 +05:30  INF]  Request finished HTTP/2 POST https://localhost:7291/api/NavOnePaymentAPI/Convert Prospect to Owner?ProspectNo=0&DateAgreementSent=2001-03-09&DateAgreementReceived=2002-03-06&ClientAgreementDated=1999-01-03&EntityNo=E000000001 - 0 - 400 - text/plain;+charset=utf-8 115.8125ms
+[2022-08-30 17:17:14.976 +05:30  INF]  Now listening on: https://localhost:7291
+[2022-08-30 17:17:15.026 +05:30  INF]  Now listening on: http://localhost:5291
+[2022-08-30 17:17:15.032 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2022-08-30 17:17:15.032 +05:30  INF]  Hosting environment: Development
+[2022-08-30 17:17:15.032 +05:30  INF]  Content root path: C:\DFX GIT Workspace\navprojects\Connectors\PaymentAPI\PaymentAPI\
+[2022-08-30 17:17:16.085 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7291/swagger/index.html - -
+[2022-08-30 17:17:16.828 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7291/swagger/index.html - - - 200 - text/html;charset=utf-8 756.9836ms
+[2022-08-30 17:17:16.995 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7291/_framework/aspnetcore-browser-refresh.js - -
+[2022-08-30 17:17:17.000 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7291/_framework/aspnetcore-browser-refresh.js - - - 200 11978 application/javascript;+charset=utf-8 4.8992ms
+[2022-08-30 17:17:17.183 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7291/swagger/v1/swagger.json - -
+[2022-08-30 17:17:17.359 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7291/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 175.8974ms
+[2022-08-30 17:18:03.056 +05:30  INF]  Request starting HTTP/2 POST https://localhost:7291/api/NavOnePaymentAPI/Convert Prospect to Owner?ProspectNo=0&DateAgreementSent=2001-03-08&DateAgreementReceived=2005-03-09&ClientAgreementDated=2004-04-07&EntityNo=E00000001 - 0
+[2022-08-30 17:18:03.064 +05:30  INF]  CORS policy execution successful.
+[2022-08-30 17:18:03.070 +05:30  INF]  Executing endpoint 'PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI)'
+[2022-08-30 17:18:03.112 +05:30  INF]  Route matched with {action = "ConvertProspecttoOwner", controller = "NavOnePaymentAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ConvertProspecttoOwner(System.String, System.DateTime, System.DateTime, System.DateTime, System.String) on controller PaymentAPI.Controllers.NavOnePaymentAPI (PaymentAPI).
+[2022-08-30 17:18:03.148 +05:30  INF]  ConvertProspecttoOwner:Entering
+[2022-08-30 17:18:04.545 +05:30  ERR]  ConvertProspecttoOwner:Error Inner Exception:{ex.InnerException}
+System.ServiceModel.FaultException: The CM-Prospect does not exist. Identification fields and values: No.='0'
+   at System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   at System.ServiceModel.Channels.ServiceChannel.EndCall(String action, Object[] outs, IAsyncResult result)
+   at System.ServiceModel.Channels.ServiceChannelProxy.TaskCreator.<>c__DisplayClass1_0.<CreateGenericTask>b__0(IAsyncResult asyncResult)
+--- End of stack trace from previous location ---
+   at PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner(String ProspectNo, DateTime DateAgreementSent, DateTime DateAgreementReceived, DateTime ClientAgreementDated, String EntityNo) in C:\DFX GIT Workspace\navprojects\Connectors\PaymentAPI\PaymentAPI\Controllers\NavOnePaymentAPI.cs:line 105
+[2022-08-30 17:18:04.636 +05:30  INF]  Executing BadRequestObjectResult, writing value of type 'System.String'.
+[2022-08-30 17:18:04.643 +05:30  INF]  Executed action PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI) in 1526.8745ms
+[2022-08-30 17:18:04.646 +05:30  INF]  Executed endpoint 'PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI)'
+[2022-08-30 17:18:04.646 +05:30  INF]  Request finished HTTP/2 POST https://localhost:7291/api/NavOnePaymentAPI/Convert Prospect to Owner?ProspectNo=0&DateAgreementSent=2001-03-08&DateAgreementReceived=2005-03-09&ClientAgreementDated=2004-04-07&EntityNo=E00000001 - 0 - 400 - text/plain;+charset=utf-8 1590.1791ms
+[2022-08-30 17:18:24.128 +05:30  INF]  Request starting HTTP/2 POST https://localhost:7291/api/NavOnePaymentAPI/Convert Prospect to Owner?ProspectNo=0&DateAgreementSent=2001-03-08&DateAgreementReceived=2005-03-09&ClientAgreementDated=2004-04-07&EntityNo=E00000009 - 0
+[2022-08-30 17:18:24.130 +05:30  INF]  CORS policy execution successful.
+[2022-08-30 17:18:24.130 +05:30  INF]  Executing endpoint 'PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI)'
+[2022-08-30 17:18:24.130 +05:30  INF]  Route matched with {action = "ConvertProspecttoOwner", controller = "NavOnePaymentAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ConvertProspecttoOwner(System.String, System.DateTime, System.DateTime, System.DateTime, System.String) on controller PaymentAPI.Controllers.NavOnePaymentAPI (PaymentAPI).
+[2022-08-30 17:18:24.131 +05:30  INF]  ConvertProspecttoOwner:Entering
+[2022-08-30 17:18:24.315 +05:30  ERR]  ConvertProspecttoOwner:Error Inner Exception:{ex.InnerException}
+System.ServiceModel.FaultException: The CM-Prospect does not exist. Identification fields and values: No.='0'
+   at System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   at System.ServiceModel.Channels.ServiceChannel.EndCall(String action, Object[] outs, IAsyncResult result)
+   at System.ServiceModel.Channels.ServiceChannelProxy.TaskCreator.<>c__DisplayClass1_0.<CreateGenericTask>b__0(IAsyncResult asyncResult)
+--- End of stack trace from previous location ---
+   at PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner(String ProspectNo, DateTime DateAgreementSent, DateTime DateAgreementReceived, DateTime ClientAgreementDated, String EntityNo) in C:\DFX GIT Workspace\navprojects\Connectors\PaymentAPI\PaymentAPI\Controllers\NavOnePaymentAPI.cs:line 105
+[2022-08-30 17:18:24.315 +05:30  INF]  Executing BadRequestObjectResult, writing value of type 'System.String'.
+[2022-08-30 17:18:24.315 +05:30  INF]  Executed action PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI) in 185.3628ms
+[2022-08-30 17:18:24.315 +05:30  INF]  Executed endpoint 'PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI)'
+[2022-08-30 17:18:24.316 +05:30  INF]  Request finished HTTP/2 POST https://localhost:7291/api/NavOnePaymentAPI/Convert Prospect to Owner?ProspectNo=0&DateAgreementSent=2001-03-08&DateAgreementReceived=2005-03-09&ClientAgreementDated=2004-04-07&EntityNo=E00000009 - 0 - 400 - text/plain;+charset=utf-8 189.6574ms
+[2022-08-30 17:26:22.908 +05:30  INF]  Request starting HTTP/2 POST https://localhost:7291/api/NavOnePaymentAPI/Convert Prospect to Owner?ProspectNo=PR00000002&DateAgreementSent=2001-03-08&DateAgreementReceived=2005-03-09&ClientAgreementDated=2004-04-07&EntityNo=E00000009 - 0
+[2022-08-30 17:26:22.910 +05:30  INF]  CORS policy execution successful.
+[2022-08-30 17:26:22.910 +05:30  INF]  Executing endpoint 'PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI)'
+[2022-08-30 17:26:22.910 +05:30  INF]  Route matched with {action = "ConvertProspecttoOwner", controller = "NavOnePaymentAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ConvertProspecttoOwner(System.String, System.DateTime, System.DateTime, System.DateTime, System.String) on controller PaymentAPI.Controllers.NavOnePaymentAPI (PaymentAPI).
+[2022-08-30 17:26:22.911 +05:30  INF]  ConvertProspecttoOwner:Entering
+[2022-08-30 17:26:24.429 +05:30  INF]  Validate Payment completed
+[2022-08-30 17:26:24.429 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.String'.
+[2022-08-30 17:26:24.429 +05:30  INF]  Executed action PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI) in 1518.7427ms
+[2022-08-30 17:26:24.429 +05:30  INF]  Executed endpoint 'PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI)'
+[2022-08-30 17:26:24.429 +05:30  INF]  Request finished HTTP/2 POST https://localhost:7291/api/NavOnePaymentAPI/Convert Prospect to Owner?ProspectNo=PR00000002&DateAgreementSent=2001-03-08&DateAgreementReceived=2005-03-09&ClientAgreementDated=2004-04-07&EntityNo=E00000009 - 0 - 200 - text/plain;+charset=utf-8 1523.6023ms
+[2022-08-30 17:53:02.505 +05:30  INF]  Request starting HTTP/1.1 POST https://localhost:7291/api/NavOnePaymentAPI/Convert Prospect to Owner?ProspectNo=PR00000002&DateAgreementSent=2001-03-08&DateAgreementReceived=2005-03-09&ClientAgreementDated=2004-04-07&EntityNo=E00000009%0A - 0
+[2022-08-30 17:53:02.505 +05:30  INF]  Executing endpoint 'PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI)'
+[2022-08-30 17:53:02.505 +05:30  INF]  Route matched with {action = "ConvertProspecttoOwner", controller = "NavOnePaymentAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ConvertProspecttoOwner(System.String, System.DateTime, System.DateTime, System.DateTime, System.String) on controller PaymentAPI.Controllers.NavOnePaymentAPI (PaymentAPI).
+[2022-08-30 17:53:02.506 +05:30  INF]  ConvertProspecttoOwner:Entering
+[2022-08-30 17:53:02.877 +05:30  ERR]  ConvertProspecttoOwner:Error Inner Exception:{ex.InnerException}
+System.ServiceModel.FaultException: The CM-Prospect does not exist. Identification fields and values: No.='PR00000002'
+   at System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   at System.ServiceModel.Channels.ServiceChannel.EndCall(String action, Object[] outs, IAsyncResult result)
+   at System.ServiceModel.Channels.ServiceChannelProxy.TaskCreator.<>c__DisplayClass1_0.<CreateGenericTask>b__0(IAsyncResult asyncResult)
+--- End of stack trace from previous location ---
+   at PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner(String ProspectNo, DateTime DateAgreementSent, DateTime DateAgreementReceived, DateTime ClientAgreementDated, String EntityNo) in C:\DFX GIT Workspace\navprojects\Connectors\PaymentAPI\PaymentAPI\Controllers\NavOnePaymentAPI.cs:line 105
+[2022-08-30 17:53:02.878 +05:30  INF]  Executing BadRequestObjectResult, writing value of type 'System.String'.
+[2022-08-30 17:53:02.880 +05:30  INF]  Executed action PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI) in 374.4716ms
+[2022-08-30 17:53:02.880 +05:30  INF]  Executed endpoint 'PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI)'
+[2022-08-30 17:53:02.880 +05:30  INF]  Request finished HTTP/1.1 POST https://localhost:7291/api/NavOnePaymentAPI/Convert Prospect to Owner?ProspectNo=PR00000002&DateAgreementSent=2001-03-08&DateAgreementReceived=2005-03-09&ClientAgreementDated=2004-04-07&EntityNo=E00000009%0A - 0 - 400 - text/plain;+charset=utf-8 375.2537ms
+[2022-08-30 17:53:21.859 +05:30  INF]  Request starting HTTP/1.1 POST https://localhost:7291/api/NavOnePaymentAPI/Convert Prospect to Owner?ProspectNo=PR00000002&DateAgreementSent=2001-03-08&DateAgreementReceived=2005-03-09&ClientAgreementDated=2004-04-07&EntityNo=E00000009%0A - 0
+[2022-08-30 17:53:21.859 +05:30  INF]  Executing endpoint 'PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI)'
+[2022-08-30 17:53:21.859 +05:30  INF]  Route matched with {action = "ConvertProspecttoOwner", controller = "NavOnePaymentAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ConvertProspecttoOwner(System.String, System.DateTime, System.DateTime, System.DateTime, System.String) on controller PaymentAPI.Controllers.NavOnePaymentAPI (PaymentAPI).
+[2022-08-30 17:53:21.859 +05:30  INF]  ConvertProspecttoOwner:Entering
+[2022-08-30 17:53:21.955 +05:30  ERR]  ConvertProspecttoOwner:Error Inner Exception:{ex.InnerException}
+System.ServiceModel.FaultException: The CM-Prospect does not exist. Identification fields and values: No.='PR00000002'
+   at System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   at System.ServiceModel.Channels.ServiceChannel.EndCall(String action, Object[] outs, IAsyncResult result)
+   at System.ServiceModel.Channels.ServiceChannelProxy.TaskCreator.<>c__DisplayClass1_0.<CreateGenericTask>b__0(IAsyncResult asyncResult)
+--- End of stack trace from previous location ---
+   at PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner(String ProspectNo, DateTime DateAgreementSent, DateTime DateAgreementReceived, DateTime ClientAgreementDated, String EntityNo) in C:\DFX GIT Workspace\navprojects\Connectors\PaymentAPI\PaymentAPI\Controllers\NavOnePaymentAPI.cs:line 105
+[2022-08-30 17:53:21.956 +05:30  INF]  Executing BadRequestObjectResult, writing value of type 'System.String'.
+[2022-08-30 17:53:21.957 +05:30  INF]  Executed action PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI) in 97.6281ms
+[2022-08-30 17:53:21.957 +05:30  INF]  Executed endpoint 'PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI)'
+[2022-08-30 17:53:21.957 +05:30  INF]  Request finished HTTP/1.1 POST https://localhost:7291/api/NavOnePaymentAPI/Convert Prospect to Owner?ProspectNo=PR00000002&DateAgreementSent=2001-03-08&DateAgreementReceived=2005-03-09&ClientAgreementDated=2004-04-07&EntityNo=E00000009%0A - 0 - 400 - text/plain;+charset=utf-8 98.3002ms
+[2022-08-30 17:55:39.295 +05:30  INF]  Request starting HTTP/2 POST https://localhost:7291/api/NavOnePaymentAPI/ValidatePayment - 0
+[2022-08-30 17:55:39.296 +05:30  INF]  CORS policy execution successful.
+[2022-08-30 17:55:39.296 +05:30  INF]  Executing endpoint 'PaymentAPI.Controllers.NavOnePaymentAPI.ValidatePayment (PaymentAPI)'
+[2022-08-30 17:55:39.299 +05:30  INF]  Route matched with {action = "ValidatePayment", controller = "NavOnePaymentAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ValidatePayment(System.String) on controller PaymentAPI.Controllers.NavOnePaymentAPI (PaymentAPI).
+[2022-08-30 17:55:39.307 +05:30  INF]  Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+[2022-08-30 17:55:39.316 +05:30  INF]  Executed action PaymentAPI.Controllers.NavOnePaymentAPI.ValidatePayment (PaymentAPI) in 17.2262ms
+[2022-08-30 17:55:39.316 +05:30  INF]  Executed endpoint 'PaymentAPI.Controllers.NavOnePaymentAPI.ValidatePayment (PaymentAPI)'
+[2022-08-30 17:55:39.316 +05:30  INF]  Request finished HTTP/2 POST https://localhost:7291/api/NavOnePaymentAPI/ValidatePayment - 0 - 400 - application/problem+json;+charset=utf-8 20.9053ms
+[2022-08-30 17:58:41.522 +05:30  INF]  Now listening on: https://localhost:7291
+[2022-08-30 17:58:41.555 +05:30  INF]  Now listening on: http://localhost:5291
+[2022-08-30 17:58:41.560 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2022-08-30 17:58:41.561 +05:30  INF]  Hosting environment: Development
+[2022-08-30 17:58:41.561 +05:30  INF]  Content root path: C:\DFX GIT Workspace\navprojects\Connectors\PaymentAPI\PaymentAPI\
+[2022-08-30 17:58:43.055 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7291/swagger/index.html - -
+[2022-08-30 17:58:43.756 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7291/swagger/index.html - - - 200 - text/html;charset=utf-8 706.5939ms
+[2022-08-30 17:58:43.831 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7291/_framework/aspnetcore-browser-refresh.js - -
+[2022-08-30 17:58:43.835 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7291/_framework/aspnetcore-browser-refresh.js - - - 200 11978 application/javascript;+charset=utf-8 4.0576ms
+[2022-08-30 17:58:44.017 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7291/swagger/v1/swagger.json - -
+[2022-08-30 17:58:44.182 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7291/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 165.4967ms
+[2022-08-30 18:02:55.867 +05:30  INF]  Request starting HTTP/2 POST https://localhost:7291/api/NavOnePaymentAPI/ConvertProspecttoOwner - 0
+[2022-08-30 18:02:55.878 +05:30  INF]  CORS policy execution successful.
+[2022-08-30 18:02:55.886 +05:30  INF]  Executing endpoint 'PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI)'
+[2022-08-30 18:02:55.922 +05:30  INF]  Route matched with {action = "ConvertProspecttoOwner", controller = "NavOnePaymentAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ConvertProspecttoOwner(System.String, System.DateTime, System.DateTime, System.DateTime, System.String) on controller PaymentAPI.Controllers.NavOnePaymentAPI (PaymentAPI).
+[2022-08-30 18:02:55.954 +05:30  INF]  Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+[2022-08-30 18:02:55.963 +05:30  INF]  Executed action PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI) in 35.8884ms
+[2022-08-30 18:02:55.964 +05:30  INF]  Executed endpoint 'PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI)'
+[2022-08-30 18:02:55.964 +05:30  INF]  Request finished HTTP/2 POST https://localhost:7291/api/NavOnePaymentAPI/ConvertProspecttoOwner - 0 - 400 - application/problem+json;+charset=utf-8 97.6126ms
+[2022-08-30 18:03:24.699 +05:30  INF]  Now listening on: https://localhost:7291
+[2022-08-30 18:03:24.759 +05:30  INF]  Now listening on: http://localhost:5291
+[2022-08-30 18:03:24.766 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2022-08-30 18:03:24.766 +05:30  INF]  Hosting environment: Development
+[2022-08-30 18:03:24.766 +05:30  INF]  Content root path: C:\DFX GIT Workspace\navprojects\Connectors\PaymentAPI\PaymentAPI\
+[2022-08-30 18:03:26.253 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7291/swagger/index.html - -
+[2022-08-30 18:03:26.877 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7291/swagger/index.html - - - 200 - text/html;charset=utf-8 632.8889ms
+[2022-08-30 18:03:27.034 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7291/_framework/aspnetcore-browser-refresh.js - -
+[2022-08-30 18:03:27.063 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7291/_framework/aspnetcore-browser-refresh.js - - - 200 11978 application/javascript;+charset=utf-8 28.3629ms
+[2022-08-30 18:03:27.212 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7291/swagger/v1/swagger.json - -
+[2022-08-30 18:03:27.339 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7291/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 127.2159ms
+[2022-08-30 18:05:51.106 +05:30  INF]  Request starting HTTP/2 POST https://localhost:7291/api/NavOnePaymentAPI/ConvertProspecttoOwner?ProspectNo=PR00000002&DateAgreementSent=1999-03-04&DateAgreementReceived=2001-04-06&ClientAgreementDated=2002-03-06&EntityNo=E00000001 - 0
+[2022-08-30 18:05:51.117 +05:30  INF]  CORS policy execution successful.
+[2022-08-30 18:05:51.122 +05:30  INF]  Executing endpoint 'PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI)'
+[2022-08-30 18:05:51.150 +05:30  INF]  Route matched with {action = "ConvertProspecttoOwner", controller = "NavOnePaymentAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ConvertProspecttoOwner(System.String, System.DateTime, System.DateTime, System.DateTime, System.String) on controller PaymentAPI.Controllers.NavOnePaymentAPI (PaymentAPI).
+[2022-08-30 18:05:51.181 +05:30  INF]  ConvertProspecttoOwner:Entering
+[2022-08-30 18:05:52.522 +05:30  ERR]  ConvertProspecttoOwner:Error Inner Exception:{ex.InnerException}
+System.ServiceModel.FaultException: The CM-Prospect does not exist. Identification fields and values: No.='PR00000002'
+   at System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   at System.ServiceModel.Channels.ServiceChannel.EndCall(String action, Object[] outs, IAsyncResult result)
+   at System.ServiceModel.Channels.ServiceChannelProxy.TaskCreator.<>c__DisplayClass1_0.<CreateGenericTask>b__0(IAsyncResult asyncResult)
+--- End of stack trace from previous location ---
+   at PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner(String ProspectNo, DateTime DateAgreementSent, DateTime DateAgreementReceived, DateTime ClientAgreementDated, String EntityNo) in C:\DFX GIT Workspace\navprojects\Connectors\PaymentAPI\PaymentAPI\Controllers\NavOnePaymentAPI.cs:line 105
+[2022-08-30 18:05:52.634 +05:30  INF]  Executing BadRequestObjectResult, writing value of type 'System.String'.
+[2022-08-30 18:05:52.641 +05:30  INF]  Executed action PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI) in 1484.9854ms
+[2022-08-30 18:05:52.643 +05:30  INF]  Executed endpoint 'PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI)'
+[2022-08-30 18:05:52.644 +05:30  INF]  Request finished HTTP/2 POST https://localhost:7291/api/NavOnePaymentAPI/ConvertProspecttoOwner?ProspectNo=PR00000002&DateAgreementSent=1999-03-04&DateAgreementReceived=2001-04-06&ClientAgreementDated=2002-03-06&EntityNo=E00000001 - 0 - 400 - text/plain;+charset=utf-8 1538.1003ms
+[2022-08-30 18:06:31.858 +05:30  INF]  Request starting HTTP/2 POST https://localhost:7291/api/NavOnePaymentAPI/ConvertProspecttoOwner?ProspectNo=PR00000022&DateAgreementSent=1999-03-04&DateAgreementReceived=2001-04-06&ClientAgreementDated=2002-03-06&EntityNo=E00000001 - 0
+[2022-08-30 18:06:31.862 +05:30  INF]  CORS policy execution successful.
+[2022-08-30 18:06:31.862 +05:30  INF]  Executing endpoint 'PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI)'
+[2022-08-30 18:06:31.863 +05:30  INF]  Route matched with {action = "ConvertProspecttoOwner", controller = "NavOnePaymentAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ConvertProspecttoOwner(System.String, System.DateTime, System.DateTime, System.DateTime, System.String) on controller PaymentAPI.Controllers.NavOnePaymentAPI (PaymentAPI).
+[2022-08-30 18:06:31.863 +05:30  INF]  ConvertProspecttoOwner:Entering
+[2022-08-30 18:06:32.134 +05:30  ERR]  ConvertProspecttoOwner:Error Inner Exception:{ex.InnerException}
+System.ServiceModel.FaultException: Microsoft Dynamics 365 Business Central Business Web Services attempted to issue a client callback to show a confirmation dialog box: There is a compliance period due, do you want to continue without closing the compliance period? (CodeUnit 9068593 Compliance Functions). Client callbacks are not supported on Microsoft Dynamics 365 Business Central Business Web Services.
+   at System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   at System.ServiceModel.Channels.ServiceChannel.EndCall(String action, Object[] outs, IAsyncResult result)
+   at System.ServiceModel.Channels.ServiceChannelProxy.TaskCreator.<>c__DisplayClass1_0.<CreateGenericTask>b__0(IAsyncResult asyncResult)
+--- End of stack trace from previous location ---
+   at PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner(String ProspectNo, DateTime DateAgreementSent, DateTime DateAgreementReceived, DateTime ClientAgreementDated, String EntityNo) in C:\DFX GIT Workspace\navprojects\Connectors\PaymentAPI\PaymentAPI\Controllers\NavOnePaymentAPI.cs:line 105
+[2022-08-30 18:06:32.135 +05:30  INF]  Executing BadRequestObjectResult, writing value of type 'System.String'.
+[2022-08-30 18:06:32.135 +05:30  INF]  Executed action PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI) in 272.7007ms
+[2022-08-30 18:06:32.135 +05:30  INF]  Executed endpoint 'PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI)'
+[2022-08-30 18:06:32.136 +05:30  INF]  Request finished HTTP/2 POST https://localhost:7291/api/NavOnePaymentAPI/ConvertProspecttoOwner?ProspectNo=PR00000022&DateAgreementSent=1999-03-04&DateAgreementReceived=2001-04-06&ClientAgreementDated=2002-03-06&EntityNo=E00000001 - 0 - 400 - text/plain;+charset=utf-8 281.2283ms
+[2022-08-30 18:06:53.058 +05:30  INF]  Request starting HTTP/2 POST https://localhost:7291/api/NavOnePaymentAPI/ConvertProspecttoOwner?ProspectNo=PR00000002&DateAgreementSent=1999-03-04&DateAgreementReceived=2001-04-06&ClientAgreementDated=2002-03-06&EntityNo=E00000001 - 0
+[2022-08-30 18:06:53.060 +05:30  INF]  CORS policy execution successful.
+[2022-08-30 18:06:53.061 +05:30  INF]  Executing endpoint 'PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI)'
+[2022-08-30 18:06:53.061 +05:30  INF]  Route matched with {action = "ConvertProspecttoOwner", controller = "NavOnePaymentAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ConvertProspecttoOwner(System.String, System.DateTime, System.DateTime, System.DateTime, System.String) on controller PaymentAPI.Controllers.NavOnePaymentAPI (PaymentAPI).
+[2022-08-30 18:06:53.061 +05:30  INF]  ConvertProspecttoOwner:Entering
+[2022-08-30 18:06:53.261 +05:30  ERR]  ConvertProspecttoOwner:Error Inner Exception:{ex.InnerException}
+System.ServiceModel.FaultException: The CM-Prospect does not exist. Identification fields and values: No.='PR00000002'
+   at System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   at System.ServiceModel.Channels.ServiceChannel.EndCall(String action, Object[] outs, IAsyncResult result)
+   at System.ServiceModel.Channels.ServiceChannelProxy.TaskCreator.<>c__DisplayClass1_0.<CreateGenericTask>b__0(IAsyncResult asyncResult)
+--- End of stack trace from previous location ---
+   at PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner(String ProspectNo, DateTime DateAgreementSent, DateTime DateAgreementReceived, DateTime ClientAgreementDated, String EntityNo) in C:\DFX GIT Workspace\navprojects\Connectors\PaymentAPI\PaymentAPI\Controllers\NavOnePaymentAPI.cs:line 105
+[2022-08-30 18:06:53.262 +05:30  INF]  Executing BadRequestObjectResult, writing value of type 'System.String'.
+[2022-08-30 18:06:53.262 +05:30  INF]  Executed action PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI) in 201.1837ms
+[2022-08-30 18:06:53.262 +05:30  INF]  Executed endpoint 'PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI)'
+[2022-08-30 18:06:53.262 +05:30  INF]  Request finished HTTP/2 POST https://localhost:7291/api/NavOnePaymentAPI/ConvertProspecttoOwner?ProspectNo=PR00000002&DateAgreementSent=1999-03-04&DateAgreementReceived=2001-04-06&ClientAgreementDated=2002-03-06&EntityNo=E00000001 - 0 - 400 - text/plain;+charset=utf-8 204.7921ms
+[2022-08-30 18:08:43.262 +05:30  INF]  Request starting HTTP/2 POST https://localhost:7291/api/NavOnePaymentAPI/ConvertProspecttoOwner?ProspectNo=PR000000017&DateAgreementSent=1999-03-04&DateAgreementReceived=2001-04-06&ClientAgreementDated=2002-03-06&EntityNo=E00000001 - 0
+[2022-08-30 18:08:43.265 +05:30  INF]  CORS policy execution successful.
+[2022-08-30 18:08:43.265 +05:30  INF]  Executing endpoint 'PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI)'
+[2022-08-30 18:08:43.265 +05:30  INF]  Route matched with {action = "ConvertProspecttoOwner", controller = "NavOnePaymentAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ConvertProspecttoOwner(System.String, System.DateTime, System.DateTime, System.DateTime, System.String) on controller PaymentAPI.Controllers.NavOnePaymentAPI (PaymentAPI).
+[2022-08-30 18:08:43.266 +05:30  INF]  ConvertProspecttoOwner:Entering
+[2022-08-30 18:08:43.553 +05:30  ERR]  ConvertProspecttoOwner:Error Inner Exception:{ex.InnerException}
+System.ServiceModel.FaultException: The CM-Prospect does not exist. Identification fields and values: No.='PR000000017'
+   at System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   at System.ServiceModel.Channels.ServiceChannel.EndCall(String action, Object[] outs, IAsyncResult result)
+   at System.ServiceModel.Channels.ServiceChannelProxy.TaskCreator.<>c__DisplayClass1_0.<CreateGenericTask>b__0(IAsyncResult asyncResult)
+--- End of stack trace from previous location ---
+   at PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner(String ProspectNo, DateTime DateAgreementSent, DateTime DateAgreementReceived, DateTime ClientAgreementDated, String EntityNo) in C:\DFX GIT Workspace\navprojects\Connectors\PaymentAPI\PaymentAPI\Controllers\NavOnePaymentAPI.cs:line 105
+[2022-08-30 18:08:43.554 +05:30  INF]  Executing BadRequestObjectResult, writing value of type 'System.String'.
+[2022-08-30 18:08:43.554 +05:30  INF]  Executed action PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI) in 288.3218ms
+[2022-08-30 18:08:43.554 +05:30  INF]  Executed endpoint 'PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI)'
+[2022-08-30 18:08:43.554 +05:30  INF]  Request finished HTTP/2 POST https://localhost:7291/api/NavOnePaymentAPI/ConvertProspecttoOwner?ProspectNo=PR000000017&DateAgreementSent=1999-03-04&DateAgreementReceived=2001-04-06&ClientAgreementDated=2002-03-06&EntityNo=E00000001 - 0 - 400 - text/plain;+charset=utf-8 291.4005ms
+[2022-08-30 18:09:05.300 +05:30  INF]  Request starting HTTP/2 POST https://localhost:7291/api/NavOnePaymentAPI/ConvertProspecttoOwner?ProspectNo=PR00000017&DateAgreementSent=1999-03-04&DateAgreementReceived=2001-04-06&ClientAgreementDated=2002-03-06&EntityNo=E00000001 - 0
+[2022-08-30 18:09:05.303 +05:30  INF]  CORS policy execution successful.
+[2022-08-30 18:09:05.304 +05:30  INF]  Executing endpoint 'PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI)'
+[2022-08-30 18:09:05.307 +05:30  INF]  Route matched with {action = "ConvertProspecttoOwner", controller = "NavOnePaymentAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ConvertProspecttoOwner(System.String, System.DateTime, System.DateTime, System.DateTime, System.String) on controller PaymentAPI.Controllers.NavOnePaymentAPI (PaymentAPI).
+[2022-08-30 18:09:05.311 +05:30  INF]  ConvertProspecttoOwner:Entering
+[2022-08-30 18:09:06.480 +05:30  INF]  Validate Payment completed
+[2022-08-30 18:09:06.480 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.String'.
+[2022-08-30 18:09:06.480 +05:30  INF]  Executed action PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI) in 1170.1831ms
+[2022-08-30 18:09:06.480 +05:30  INF]  Executed endpoint 'PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI)'
+[2022-08-30 18:09:06.480 +05:30  INF]  Request finished HTTP/2 POST https://localhost:7291/api/NavOnePaymentAPI/ConvertProspecttoOwner?ProspectNo=PR00000017&DateAgreementSent=1999-03-04&DateAgreementReceived=2001-04-06&ClientAgreementDated=2002-03-06&EntityNo=E00000001 - 0 - 200 - text/plain;+charset=utf-8 1180.1943ms
+[2022-08-30 18:11:31.527 +05:30  INF]  Now listening on: https://localhost:7291
+[2022-08-30 18:11:31.555 +05:30  INF]  Now listening on: http://localhost:5291
+[2022-08-30 18:11:31.557 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2022-08-30 18:11:31.558 +05:30  INF]  Hosting environment: Development
+[2022-08-30 18:11:31.558 +05:30  INF]  Content root path: C:\DFX GIT Workspace\navprojects\Connectors\PaymentAPI\PaymentAPI\
+[2022-08-30 18:11:32.861 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7291/swagger/index.html - -
+[2022-08-30 18:11:33.465 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7291/swagger/index.html - - - 200 - text/html;charset=utf-8 597.1610ms
+[2022-08-30 18:11:33.556 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7291/_framework/aspnetcore-browser-refresh.js - -
+[2022-08-30 18:11:33.561 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7291/_framework/aspnetcore-browser-refresh.js - - - 200 11978 application/javascript;+charset=utf-8 4.1480ms
+[2022-08-30 18:11:33.696 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7291/swagger/v1/swagger.json - -
+[2022-08-30 18:11:33.890 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7291/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 194.1371ms
+[2022-08-30 18:12:31.173 +05:30  INF]  Request starting HTTP/2 POST https://localhost:7291/api/NavOnePaymentAPI/ConvertProspecttoOwner?ProspectNo=PR00000017&DateAgreementSent=1999-03-02&DateAgreementReceived=2001-04-03&ClientAgreementDated=2004-03-05&EntityNo=E00000001 - 0
+[2022-08-30 18:12:31.197 +05:30  INF]  CORS policy execution successful.
+[2022-08-30 18:12:31.205 +05:30  INF]  Executing endpoint 'PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI)'
+[2022-08-30 18:12:31.249 +05:30  INF]  Route matched with {action = "ConvertProspecttoOwner", controller = "NavOnePaymentAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ConvertProspecttoOwner(System.String, System.DateTime, System.DateTime, System.DateTime, System.String) on controller PaymentAPI.Controllers.NavOnePaymentAPI (PaymentAPI).
+[2022-08-30 18:12:31.291 +05:30  INF]  ConvertProspecttoOwner:Entering
+[2022-08-30 18:12:32.586 +05:30  ERR]  ConvertProspecttoOwner:Error Inner Exception:{ex.InnerException}
+System.ServiceModel.FaultException: The CM-Prospect does not exist. Identification fields and values: No.='PR00000017'
+   at System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   at System.ServiceModel.Channels.ServiceChannel.EndCall(String action, Object[] outs, IAsyncResult result)
+   at System.ServiceModel.Channels.ServiceChannelProxy.TaskCreator.<>c__DisplayClass1_0.<CreateGenericTask>b__0(IAsyncResult asyncResult)
+--- End of stack trace from previous location ---
+   at PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner(String ProspectNo, DateTime DateAgreementSent, DateTime DateAgreementReceived, DateTime ClientAgreementDated, String EntityNo) in C:\DFX GIT Workspace\navprojects\Connectors\PaymentAPI\PaymentAPI\Controllers\NavOnePaymentAPI.cs:line 105
+[2022-08-30 18:12:32.706 +05:30  INF]  Executing BadRequestObjectResult, writing value of type 'System.String'.
+[2022-08-30 18:12:32.713 +05:30  INF]  Executed action PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI) in 1459.0589ms
+[2022-08-30 18:12:32.715 +05:30  INF]  Executed endpoint 'PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI)'
+[2022-08-30 18:12:32.715 +05:30  INF]  Request finished HTTP/2 POST https://localhost:7291/api/NavOnePaymentAPI/ConvertProspecttoOwner?ProspectNo=PR00000017&DateAgreementSent=1999-03-02&DateAgreementReceived=2001-04-03&ClientAgreementDated=2004-03-05&EntityNo=E00000001 - 0 - 400 - text/plain;+charset=utf-8 1542.3400ms
+[2022-08-30 18:12:59.810 +05:30  INF]  Request starting HTTP/2 POST https://localhost:7291/api/NavOnePaymentAPI/ConvertProspecttoOwner?ProspectNo=PR0000017&DateAgreementSent=1999-03-02&DateAgreementReceived=2001-04-03&ClientAgreementDated=2004-03-05&EntityNo=E00000001 - 0
+[2022-08-30 18:12:59.812 +05:30  INF]  CORS policy execution successful.
+[2022-08-30 18:12:59.813 +05:30  INF]  Executing endpoint 'PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI)'
+[2022-08-30 18:12:59.813 +05:30  INF]  Route matched with {action = "ConvertProspecttoOwner", controller = "NavOnePaymentAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ConvertProspecttoOwner(System.String, System.DateTime, System.DateTime, System.DateTime, System.String) on controller PaymentAPI.Controllers.NavOnePaymentAPI (PaymentAPI).
+[2022-08-30 18:12:59.814 +05:30  INF]  ConvertProspecttoOwner:Entering
+[2022-08-30 18:13:00.055 +05:30  ERR]  ConvertProspecttoOwner:Error Inner Exception:{ex.InnerException}
+System.ServiceModel.FaultException: The CM-Prospect does not exist. Identification fields and values: No.='PR0000017'
+   at System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   at System.ServiceModel.Channels.ServiceChannel.EndCall(String action, Object[] outs, IAsyncResult result)
+   at System.ServiceModel.Channels.ServiceChannelProxy.TaskCreator.<>c__DisplayClass1_0.<CreateGenericTask>b__0(IAsyncResult asyncResult)
+--- End of stack trace from previous location ---
+   at PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner(String ProspectNo, DateTime DateAgreementSent, DateTime DateAgreementReceived, DateTime ClientAgreementDated, String EntityNo) in C:\DFX GIT Workspace\navprojects\Connectors\PaymentAPI\PaymentAPI\Controllers\NavOnePaymentAPI.cs:line 105
+[2022-08-30 18:13:00.056 +05:30  INF]  Executing BadRequestObjectResult, writing value of type 'System.String'.
+[2022-08-30 18:13:00.056 +05:30  INF]  Executed action PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI) in 242.7212ms
+[2022-08-30 18:13:00.056 +05:30  INF]  Executed endpoint 'PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI)'
+[2022-08-30 18:13:00.056 +05:30  INF]  Request finished HTTP/2 POST https://localhost:7291/api/NavOnePaymentAPI/ConvertProspecttoOwner?ProspectNo=PR0000017&DateAgreementSent=1999-03-02&DateAgreementReceived=2001-04-03&ClientAgreementDated=2004-03-05&EntityNo=E00000001 - 0 - 400 - text/plain;+charset=utf-8 246.3236ms
+[2022-08-30 18:13:33.564 +05:30  INF]  Request starting HTTP/2 POST https://localhost:7291/api/NavOnePaymentAPI/ConvertProspecttoOwner?ProspectNo=PR00000017&DateAgreementSent=1999-03-02&DateAgreementReceived=2001-04-03&ClientAgreementDated=2004-03-05&EntityNo=E00000001 - 0
+[2022-08-30 18:13:33.565 +05:30  INF]  CORS policy execution successful.
+[2022-08-30 18:13:33.569 +05:30  INF]  Executing endpoint 'PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI)'
+[2022-08-30 18:13:33.571 +05:30  INF]  Route matched with {action = "ConvertProspecttoOwner", controller = "NavOnePaymentAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ConvertProspecttoOwner(System.String, System.DateTime, System.DateTime, System.DateTime, System.String) on controller PaymentAPI.Controllers.NavOnePaymentAPI (PaymentAPI).
+[2022-08-30 18:13:33.571 +05:30  INF]  ConvertProspecttoOwner:Entering
+[2022-08-30 18:13:33.842 +05:30  ERR]  ConvertProspecttoOwner:Error Inner Exception:{ex.InnerException}
+System.ServiceModel.FaultException: The CM-Prospect does not exist. Identification fields and values: No.='PR00000017'
+   at System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   at System.ServiceModel.Channels.ServiceChannel.EndCall(String action, Object[] outs, IAsyncResult result)
+   at System.ServiceModel.Channels.ServiceChannelProxy.TaskCreator.<>c__DisplayClass1_0.<CreateGenericTask>b__0(IAsyncResult asyncResult)
+--- End of stack trace from previous location ---
+   at PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner(String ProspectNo, DateTime DateAgreementSent, DateTime DateAgreementReceived, DateTime ClientAgreementDated, String EntityNo) in C:\DFX GIT Workspace\navprojects\Connectors\PaymentAPI\PaymentAPI\Controllers\NavOnePaymentAPI.cs:line 105
+[2022-08-30 18:13:33.843 +05:30  INF]  Executing BadRequestObjectResult, writing value of type 'System.String'.
+[2022-08-30 18:13:33.843 +05:30  INF]  Executed action PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI) in 272.0321ms
+[2022-08-30 18:13:33.843 +05:30  INF]  Executed endpoint 'PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI)'
+[2022-08-30 18:13:33.843 +05:30  INF]  Request finished HTTP/2 POST https://localhost:7291/api/NavOnePaymentAPI/ConvertProspecttoOwner?ProspectNo=PR00000017&DateAgreementSent=1999-03-02&DateAgreementReceived=2001-04-03&ClientAgreementDated=2004-03-05&EntityNo=E00000001 - 0 - 400 - text/plain;+charset=utf-8 279.3219ms
+[2022-08-30 18:13:51.184 +05:30  INF]  Request starting HTTP/2 POST https://localhost:7291/api/NavOnePaymentAPI/ConvertProspecttoOwner?ProspectNo=PR00000017&DateAgreementSent=1999-03-02&DateAgreementReceived=2001-04-03&ClientAgreementDated=2004-03-05&EntityNo=E00000001 - 0
+[2022-08-30 18:13:51.184 +05:30  INF]  CORS policy execution successful.
+[2022-08-30 18:13:51.185 +05:30  INF]  Executing endpoint 'PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI)'
+[2022-08-30 18:13:51.185 +05:30  INF]  Route matched with {action = "ConvertProspecttoOwner", controller = "NavOnePaymentAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ConvertProspecttoOwner(System.String, System.DateTime, System.DateTime, System.DateTime, System.String) on controller PaymentAPI.Controllers.NavOnePaymentAPI (PaymentAPI).
+[2022-08-30 18:13:51.185 +05:30  INF]  ConvertProspecttoOwner:Entering
+[2022-08-30 18:13:51.285 +05:30  ERR]  ConvertProspecttoOwner:Error Inner Exception:{ex.InnerException}
+System.ServiceModel.FaultException: The CM-Prospect does not exist. Identification fields and values: No.='PR00000017'
+   at System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   at System.ServiceModel.Channels.ServiceChannel.EndCall(String action, Object[] outs, IAsyncResult result)
+   at System.ServiceModel.Channels.ServiceChannelProxy.TaskCreator.<>c__DisplayClass1_0.<CreateGenericTask>b__0(IAsyncResult asyncResult)
+--- End of stack trace from previous location ---
+   at PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner(String ProspectNo, DateTime DateAgreementSent, DateTime DateAgreementReceived, DateTime ClientAgreementDated, String EntityNo) in C:\DFX GIT Workspace\navprojects\Connectors\PaymentAPI\PaymentAPI\Controllers\NavOnePaymentAPI.cs:line 105
+[2022-08-30 18:13:51.285 +05:30  INF]  Executing BadRequestObjectResult, writing value of type 'System.String'.
+[2022-08-30 18:13:51.286 +05:30  INF]  Executed action PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI) in 100.9564ms
+[2022-08-30 18:13:51.286 +05:30  INF]  Executed endpoint 'PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI)'
+[2022-08-30 18:13:51.286 +05:30  INF]  Request finished HTTP/2 POST https://localhost:7291/api/NavOnePaymentAPI/ConvertProspecttoOwner?ProspectNo=PR00000017&DateAgreementSent=1999-03-02&DateAgreementReceived=2001-04-03&ClientAgreementDated=2004-03-05&EntityNo=E00000001 - 0 - 400 - text/plain;+charset=utf-8 101.7255ms
+[2022-08-30 18:14:06.084 +05:30  INF]  Request starting HTTP/2 POST https://localhost:7291/api/NavOnePaymentAPI/ConvertProspecttoOwner?ProspectNo=PR00000017&DateAgreementSent=1999-03-02&DateAgreementReceived=2001-04-03&ClientAgreementDated=2004-03-05&EntityNo=E00000009 - 0
+[2022-08-30 18:14:06.085 +05:30  INF]  CORS policy execution successful.
+[2022-08-30 18:14:06.086 +05:30  INF]  Executing endpoint 'PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI)'
+[2022-08-30 18:14:06.086 +05:30  INF]  Route matched with {action = "ConvertProspecttoOwner", controller = "NavOnePaymentAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ConvertProspecttoOwner(System.String, System.DateTime, System.DateTime, System.DateTime, System.String) on controller PaymentAPI.Controllers.NavOnePaymentAPI (PaymentAPI).
+[2022-08-30 18:14:06.086 +05:30  INF]  ConvertProspecttoOwner:Entering
+[2022-08-30 18:14:06.393 +05:30  ERR]  ConvertProspecttoOwner:Error Inner Exception:{ex.InnerException}
+System.ServiceModel.FaultException: The CM-Prospect does not exist. Identification fields and values: No.='PR00000017'
+   at System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   at System.ServiceModel.Channels.ServiceChannel.EndCall(String action, Object[] outs, IAsyncResult result)
+   at System.ServiceModel.Channels.ServiceChannelProxy.TaskCreator.<>c__DisplayClass1_0.<CreateGenericTask>b__0(IAsyncResult asyncResult)
+--- End of stack trace from previous location ---
+   at PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner(String ProspectNo, DateTime DateAgreementSent, DateTime DateAgreementReceived, DateTime ClientAgreementDated, String EntityNo) in C:\DFX GIT Workspace\navprojects\Connectors\PaymentAPI\PaymentAPI\Controllers\NavOnePaymentAPI.cs:line 105
+[2022-08-30 18:14:06.393 +05:30  INF]  Executing BadRequestObjectResult, writing value of type 'System.String'.
+[2022-08-30 18:14:06.393 +05:30  INF]  Executed action PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI) in 307.06ms
+[2022-08-30 18:14:06.393 +05:30  INF]  Executed endpoint 'PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI)'
+[2022-08-30 18:14:06.394 +05:30  INF]  Request finished HTTP/2 POST https://localhost:7291/api/NavOnePaymentAPI/ConvertProspecttoOwner?ProspectNo=PR00000017&DateAgreementSent=1999-03-02&DateAgreementReceived=2001-04-03&ClientAgreementDated=2004-03-05&EntityNo=E00000009 - 0 - 400 - text/plain;+charset=utf-8 309.1234ms
+[2022-08-30 18:14:29.158 +05:30  INF]  Request starting HTTP/2 POST https://localhost:7291/api/NavOnePaymentAPI/ConvertProspecttoOwner?ProspectNo=PR00000018&DateAgreementSent=1999-03-02&DateAgreementReceived=2001-04-03&ClientAgreementDated=2004-03-05&EntityNo=E00000009 - 0
+[2022-08-30 18:14:29.158 +05:30  INF]  CORS policy execution successful.
+[2022-08-30 18:14:29.158 +05:30  INF]  Executing endpoint 'PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI)'
+[2022-08-30 18:14:29.158 +05:30  INF]  Route matched with {action = "ConvertProspecttoOwner", controller = "NavOnePaymentAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ConvertProspecttoOwner(System.String, System.DateTime, System.DateTime, System.DateTime, System.String) on controller PaymentAPI.Controllers.NavOnePaymentAPI (PaymentAPI).
+[2022-08-30 18:14:29.159 +05:30  INF]  ConvertProspecttoOwner:Entering
+[2022-08-30 18:14:29.630 +05:30  INF]  Validate Payment completed
+[2022-08-30 18:14:29.630 +05:30  INF]  Executing OkObjectResult, writing value of type 'PaymentAPI.Model.Response'.
+[2022-08-30 18:14:29.639 +05:30  INF]  Executed action PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI) in 480.8917ms
+[2022-08-30 18:14:29.639 +05:30  INF]  Executed endpoint 'PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI)'
+[2022-08-30 18:14:29.640 +05:30  INF]  Request finished HTTP/2 POST https://localhost:7291/api/NavOnePaymentAPI/ConvertProspecttoOwner?ProspectNo=PR00000018&DateAgreementSent=1999-03-02&DateAgreementReceived=2001-04-03&ClientAgreementDated=2004-03-05&EntityNo=E00000009 - 0 - 200 - application/json;+charset=utf-8 482.0352ms
+[2022-08-30 18:16:40.259 +05:30  INF]  Request starting HTTP/2 POST https://localhost:7291/api/NavOnePaymentAPI/ConvertProspecttoOwner?ProspectNo=PR00000018&DateAgreementSent=1999-03-02&DateAgreementReceived=2001-04-03&ClientAgreementDated=2004-03-05&EntityNo=E00000001 - 0
+[2022-08-30 18:16:40.260 +05:30  INF]  CORS policy execution successful.
+[2022-08-30 18:16:40.261 +05:30  INF]  Executing endpoint 'PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI)'
+[2022-08-30 18:16:40.261 +05:30  INF]  Route matched with {action = "ConvertProspecttoOwner", controller = "NavOnePaymentAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ConvertProspecttoOwner(System.String, System.DateTime, System.DateTime, System.DateTime, System.String) on controller PaymentAPI.Controllers.NavOnePaymentAPI (PaymentAPI).
+[2022-08-30 18:16:40.270 +05:30  INF]  ConvertProspecttoOwner:Entering
+[2022-08-30 18:16:40.430 +05:30  ERR]  ConvertProspecttoOwner:Error Inner Exception:{ex.InnerException}
+System.ServiceModel.FaultException: The CM-Prospect does not exist. Identification fields and values: No.='PR00000018'
+   at System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   at System.ServiceModel.Channels.ServiceChannel.EndCall(String action, Object[] outs, IAsyncResult result)
+   at System.ServiceModel.Channels.ServiceChannelProxy.TaskCreator.<>c__DisplayClass1_0.<CreateGenericTask>b__0(IAsyncResult asyncResult)
+--- End of stack trace from previous location ---
+   at PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner(String ProspectNo, DateTime DateAgreementSent, DateTime DateAgreementReceived, DateTime ClientAgreementDated, String EntityNo) in C:\DFX GIT Workspace\navprojects\Connectors\PaymentAPI\PaymentAPI\Controllers\NavOnePaymentAPI.cs:line 105
+[2022-08-30 18:16:40.432 +05:30  INF]  Executing BadRequestObjectResult, writing value of type 'System.String'.
+[2022-08-30 18:16:40.432 +05:30  INF]  Executed action PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI) in 171.3454ms
+[2022-08-30 18:16:40.432 +05:30  INF]  Executed endpoint 'PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI)'
+[2022-08-30 18:16:40.432 +05:30  INF]  Request finished HTTP/2 POST https://localhost:7291/api/NavOnePaymentAPI/ConvertProspecttoOwner?ProspectNo=PR00000018&DateAgreementSent=1999-03-02&DateAgreementReceived=2001-04-03&ClientAgreementDated=2004-03-05&EntityNo=E00000001 - 0 - 400 - text/plain;+charset=utf-8 173.1923ms
+[2022-08-30 18:16:53.959 +05:30  INF]  Request starting HTTP/2 POST https://localhost:7291/api/NavOnePaymentAPI/ConvertProspecttoOwner?ProspectNo=PR00000018&DateAgreementSent=1999-03-02&DateAgreementReceived=2001-04-03&ClientAgreementDated=2004-03-05&EntityNo=E00000009 - 0
+[2022-08-30 18:16:53.959 +05:30  INF]  CORS policy execution successful.
+[2022-08-30 18:16:53.959 +05:30  INF]  Executing endpoint 'PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI)'
+[2022-08-30 18:16:53.960 +05:30  INF]  Route matched with {action = "ConvertProspecttoOwner", controller = "NavOnePaymentAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ConvertProspecttoOwner(System.String, System.DateTime, System.DateTime, System.DateTime, System.String) on controller PaymentAPI.Controllers.NavOnePaymentAPI (PaymentAPI).
+[2022-08-30 18:16:53.960 +05:30  INF]  ConvertProspecttoOwner:Entering
+[2022-08-30 18:16:54.041 +05:30  ERR]  ConvertProspecttoOwner:Error Inner Exception:{ex.InnerException}
+System.ServiceModel.FaultException: The CM-Prospect does not exist. Identification fields and values: No.='PR00000018'
+   at System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   at System.ServiceModel.Channels.ServiceChannel.EndCall(String action, Object[] outs, IAsyncResult result)
+   at System.ServiceModel.Channels.ServiceChannelProxy.TaskCreator.<>c__DisplayClass1_0.<CreateGenericTask>b__0(IAsyncResult asyncResult)
+--- End of stack trace from previous location ---
+   at PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner(String ProspectNo, DateTime DateAgreementSent, DateTime DateAgreementReceived, DateTime ClientAgreementDated, String EntityNo) in C:\DFX GIT Workspace\navprojects\Connectors\PaymentAPI\PaymentAPI\Controllers\NavOnePaymentAPI.cs:line 105
+[2022-08-30 18:16:54.041 +05:30  INF]  Executing BadRequestObjectResult, writing value of type 'System.String'.
+[2022-08-30 18:16:54.041 +05:30  INF]  Executed action PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI) in 81.4186ms
+[2022-08-30 18:16:54.041 +05:30  INF]  Executed endpoint 'PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI)'
+[2022-08-30 18:16:54.041 +05:30  INF]  Request finished HTTP/2 POST https://localhost:7291/api/NavOnePaymentAPI/ConvertProspecttoOwner?ProspectNo=PR00000018&DateAgreementSent=1999-03-02&DateAgreementReceived=2001-04-03&ClientAgreementDated=2004-03-05&EntityNo=E00000009 - 0 - 400 - text/plain;+charset=utf-8 82.2278ms
+[2022-08-30 18:17:10.401 +05:30  INF]  Request starting HTTP/2 POST https://localhost:7291/api/NavOnePaymentAPI/ConvertProspecttoOwner?ProspectNo=PR00000018&DateAgreementSent=1999-03-02&DateAgreementReceived=2001-04-03&ClientAgreementDated=2004-03-05&EntityNo=E00000009 - 0
+[2022-08-30 18:17:10.402 +05:30  INF]  CORS policy execution successful.
+[2022-08-30 18:17:10.402 +05:30  INF]  Executing endpoint 'PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI)'
+[2022-08-30 18:17:10.402 +05:30  INF]  Route matched with {action = "ConvertProspecttoOwner", controller = "NavOnePaymentAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ConvertProspecttoOwner(System.String, System.DateTime, System.DateTime, System.DateTime, System.String) on controller PaymentAPI.Controllers.NavOnePaymentAPI (PaymentAPI).
+[2022-08-30 18:17:10.402 +05:30  INF]  ConvertProspecttoOwner:Entering
+[2022-08-30 18:17:10.570 +05:30  ERR]  ConvertProspecttoOwner:Error Inner Exception:{ex.InnerException}
+System.ServiceModel.FaultException: The CM-Prospect does not exist. Identification fields and values: No.='PR00000018'
+   at System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   at System.ServiceModel.Channels.ServiceChannel.EndCall(String action, Object[] outs, IAsyncResult result)
+   at System.ServiceModel.Channels.ServiceChannelProxy.TaskCreator.<>c__DisplayClass1_0.<CreateGenericTask>b__0(IAsyncResult asyncResult)
+--- End of stack trace from previous location ---
+   at PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner(String ProspectNo, DateTime DateAgreementSent, DateTime DateAgreementReceived, DateTime ClientAgreementDated, String EntityNo) in C:\DFX GIT Workspace\navprojects\Connectors\PaymentAPI\PaymentAPI\Controllers\NavOnePaymentAPI.cs:line 105
+[2022-08-30 18:17:10.571 +05:30  INF]  Executing BadRequestObjectResult, writing value of type 'System.String'.
+[2022-08-30 18:17:10.571 +05:30  INF]  Executed action PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI) in 169.1243ms
+[2022-08-30 18:17:10.571 +05:30  INF]  Executed endpoint 'PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI)'
+[2022-08-30 18:17:10.571 +05:30  INF]  Request finished HTTP/2 POST https://localhost:7291/api/NavOnePaymentAPI/ConvertProspecttoOwner?ProspectNo=PR00000018&DateAgreementSent=1999-03-02&DateAgreementReceived=2001-04-03&ClientAgreementDated=2004-03-05&EntityNo=E00000009 - 0 - 400 - text/plain;+charset=utf-8 169.8045ms
+[2022-08-30 18:19:45.647 +05:30  INF]  Request starting HTTP/2 POST https://localhost:7291/api/NavOnePaymentAPI/ConvertProspecttoOwner?ProspectNo=PR00000022&DateAgreementSent=1999-03-02&DateAgreementReceived=2001-04-03&ClientAgreementDated=2004-03-05&EntityNo=E00009 - 0
+[2022-08-30 18:19:45.647 +05:30  INF]  CORS policy execution successful.
+[2022-08-30 18:19:45.649 +05:30  INF]  Executing endpoint 'PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI)'
+[2022-08-30 18:19:45.649 +05:30  INF]  Route matched with {action = "ConvertProspecttoOwner", controller = "NavOnePaymentAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ConvertProspecttoOwner(System.String, System.DateTime, System.DateTime, System.DateTime, System.String) on controller PaymentAPI.Controllers.NavOnePaymentAPI (PaymentAPI).
+[2022-08-30 18:19:45.650 +05:30  INF]  ConvertProspecttoOwner:Entering
+[2022-08-30 18:19:45.980 +05:30  ERR]  ConvertProspecttoOwner:Error Inner Exception:{ex.InnerException}
+System.ServiceModel.FaultException: Entity doesn't exist : E00009
+   at System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   at System.ServiceModel.Channels.ServiceChannel.EndCall(String action, Object[] outs, IAsyncResult result)
+   at System.ServiceModel.Channels.ServiceChannelProxy.TaskCreator.<>c__DisplayClass1_0.<CreateGenericTask>b__0(IAsyncResult asyncResult)
+--- End of stack trace from previous location ---
+   at PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner(String ProspectNo, DateTime DateAgreementSent, DateTime DateAgreementReceived, DateTime ClientAgreementDated, String EntityNo) in C:\DFX GIT Workspace\navprojects\Connectors\PaymentAPI\PaymentAPI\Controllers\NavOnePaymentAPI.cs:line 105
+[2022-08-30 18:19:45.980 +05:30  INF]  Executing BadRequestObjectResult, writing value of type 'System.String'.
+[2022-08-30 18:19:45.980 +05:30  INF]  Executed action PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI) in 330.8988ms
+[2022-08-30 18:19:45.980 +05:30  INF]  Executed endpoint 'PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI)'
+[2022-08-30 18:19:45.980 +05:30  INF]  Request finished HTTP/2 POST https://localhost:7291/api/NavOnePaymentAPI/ConvertProspecttoOwner?ProspectNo=PR00000022&DateAgreementSent=1999-03-02&DateAgreementReceived=2001-04-03&ClientAgreementDated=2004-03-05&EntityNo=E00009 - 0 - 400 - text/plain;+charset=utf-8 333.9953ms
+[2022-08-30 18:21:58.321 +05:30  INF]  Now listening on: https://localhost:7291
+[2022-08-30 18:21:58.361 +05:30  INF]  Now listening on: http://localhost:5291
+[2022-08-30 18:21:58.364 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2022-08-30 18:21:58.365 +05:30  INF]  Hosting environment: Development
+[2022-08-30 18:21:58.365 +05:30  INF]  Content root path: C:\DFX GIT Workspace\navprojects\Connectors\PaymentAPI\PaymentAPI\
+[2022-08-30 18:21:59.541 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7291/swagger/index.html - -
+[2022-08-30 18:22:00.207 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7291/swagger/index.html - - - 200 - text/html;charset=utf-8 672.0022ms
+[2022-08-30 18:22:00.249 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7291/_framework/aspnetcore-browser-refresh.js - -
+[2022-08-30 18:22:00.260 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7291/_framework/aspnetcore-browser-refresh.js - - - 200 11978 application/javascript;+charset=utf-8 10.8783ms
+[2022-08-30 18:22:00.454 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7291/swagger/v1/swagger.json - -
+[2022-08-30 18:22:00.616 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7291/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 161.5136ms
+[2022-08-30 18:22:52.468 +05:30  INF]  Request starting HTTP/2 POST https://localhost:7291/api/NavOnePaymentAPI/ConvertProspecttoOwner?ProspectNo=PR00000022&DateAgreementSent=1999-03-05&DateAgreementReceived=2001-04-03&ClientAgreementDated=2002-08-09&EntityNo=E00000009 - 0
+[2022-08-30 18:22:52.477 +05:30  INF]  CORS policy execution successful.
+[2022-08-30 18:22:52.486 +05:30  INF]  Executing endpoint 'PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI)'
+[2022-08-30 18:22:52.536 +05:30  INF]  Route matched with {action = "ConvertProspecttoOwner", controller = "NavOnePaymentAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ConvertProspecttoOwner(System.String, System.DateTime, System.DateTime, System.DateTime, System.String) on controller PaymentAPI.Controllers.NavOnePaymentAPI (PaymentAPI).
+[2022-08-30 18:22:52.604 +05:30  INF]  ConvertProspecttoOwner:Entering
+[2022-08-30 18:22:54.141 +05:30  ERR]  ConvertProspecttoOwner:Error Inner Exception:{ex.InnerException}
+System.ServiceModel.FaultException: Microsoft Dynamics 365 Business Central Business Web Services attempted to issue a client callback to show a confirmation dialog box: There is a compliance period due, do you want to continue without closing the compliance period? (CodeUnit 9068593 Compliance Functions). Client callbacks are not supported on Microsoft Dynamics 365 Business Central Business Web Services.
+   at System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   at System.ServiceModel.Channels.ServiceChannel.EndCall(String action, Object[] outs, IAsyncResult result)
+   at System.ServiceModel.Channels.ServiceChannelProxy.TaskCreator.<>c__DisplayClass1_0.<CreateGenericTask>b__0(IAsyncResult asyncResult)
+--- End of stack trace from previous location ---
+   at PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner(String ProspectNo, DateTime DateAgreementSent, DateTime DateAgreementReceived, DateTime ClientAgreementDated, String EntityNo) in C:\DFX GIT Workspace\navprojects\Connectors\PaymentAPI\PaymentAPI\Controllers\NavOnePaymentAPI.cs:line 105
+[2022-08-30 18:22:54.235 +05:30  INF]  Executing BadRequestObjectResult, writing value of type 'PaymentAPI.Model.Response'.
+[2022-08-30 18:22:54.254 +05:30  INF]  Executed action PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI) in 1709.3026ms
+[2022-08-30 18:22:54.256 +05:30  INF]  Executed endpoint 'PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI)'
+[2022-08-30 18:22:54.257 +05:30  INF]  Request finished HTTP/2 POST https://localhost:7291/api/NavOnePaymentAPI/ConvertProspecttoOwner?ProspectNo=PR00000022&DateAgreementSent=1999-03-05&DateAgreementReceived=2001-04-03&ClientAgreementDated=2002-08-09&EntityNo=E00000009 - 0 - 400 - application/json;+charset=utf-8 1789.8381ms
+[2022-08-30 18:25:09.919 +05:30  INF]  Request starting HTTP/2 POST https://localhost:7291/api/NavOnePaymentAPI/ConvertProspecttoOwner?ProspectNo=PR00000019&DateAgreementSent=1999-03-05&DateAgreementReceived=2001-04-03&ClientAgreementDated=2002-08-09&EntityNo=E00000009 - 0
+[2022-08-30 18:25:09.922 +05:30  INF]  CORS policy execution successful.
+[2022-08-30 18:25:09.923 +05:30  INF]  Executing endpoint 'PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI)'
+[2022-08-30 18:25:09.923 +05:30  INF]  Route matched with {action = "ConvertProspecttoOwner", controller = "NavOnePaymentAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ConvertProspecttoOwner(System.String, System.DateTime, System.DateTime, System.DateTime, System.String) on controller PaymentAPI.Controllers.NavOnePaymentAPI (PaymentAPI).
+[2022-08-30 18:25:09.923 +05:30  INF]  ConvertProspecttoOwner:Entering
+[2022-08-30 18:25:10.379 +05:30  INF]  Validate Payment completed
+[2022-08-30 18:25:10.380 +05:30  INF]  Executing OkObjectResult, writing value of type 'PaymentAPI.Model.Response'.
+[2022-08-30 18:25:10.380 +05:30  INF]  Executed action PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI) in 457.4065ms
+[2022-08-30 18:25:10.380 +05:30  INF]  Executed endpoint 'PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI)'
+[2022-08-30 18:25:10.381 +05:30  INF]  Request finished HTTP/2 POST https://localhost:7291/api/NavOnePaymentAPI/ConvertProspecttoOwner?ProspectNo=PR00000019&DateAgreementSent=1999-03-05&DateAgreementReceived=2001-04-03&ClientAgreementDated=2002-08-09&EntityNo=E00000009 - 0 - 200 - application/json;+charset=utf-8 461.3683ms
+[2022-08-30 18:25:20.321 +05:30  INF]  Request starting HTTP/2 POST https://localhost:7291/api/NavOnePaymentAPI/ConvertProspecttoOwner?ProspectNo=PR00000019&DateAgreementSent=1999-03-05&DateAgreementReceived=2001-04-03&ClientAgreementDated=2002-08-09&EntityNo=E000009 - 0
+[2022-08-30 18:25:20.323 +05:30  INF]  CORS policy execution successful.
+[2022-08-30 18:25:20.323 +05:30  INF]  Executing endpoint 'PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI)'
+[2022-08-30 18:25:20.323 +05:30  INF]  Route matched with {action = "ConvertProspecttoOwner", controller = "NavOnePaymentAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ConvertProspecttoOwner(System.String, System.DateTime, System.DateTime, System.DateTime, System.String) on controller PaymentAPI.Controllers.NavOnePaymentAPI (PaymentAPI).
+[2022-08-30 18:25:20.324 +05:30  INF]  ConvertProspecttoOwner:Entering
+[2022-08-30 18:25:20.415 +05:30  ERR]  ConvertProspecttoOwner:Error Inner Exception:{ex.InnerException}
+System.ServiceModel.FaultException: The CM-Prospect does not exist. Identification fields and values: No.='PR00000019'
+   at System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   at System.ServiceModel.Channels.ServiceChannel.EndCall(String action, Object[] outs, IAsyncResult result)
+   at System.ServiceModel.Channels.ServiceChannelProxy.TaskCreator.<>c__DisplayClass1_0.<CreateGenericTask>b__0(IAsyncResult asyncResult)
+--- End of stack trace from previous location ---
+   at PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner(String ProspectNo, DateTime DateAgreementSent, DateTime DateAgreementReceived, DateTime ClientAgreementDated, String EntityNo) in C:\DFX GIT Workspace\navprojects\Connectors\PaymentAPI\PaymentAPI\Controllers\NavOnePaymentAPI.cs:line 105
+[2022-08-30 18:25:20.415 +05:30  INF]  Executing BadRequestObjectResult, writing value of type 'PaymentAPI.Model.Response'.
+[2022-08-30 18:25:20.416 +05:30  INF]  Executed action PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI) in 92.3038ms
+[2022-08-30 18:25:20.416 +05:30  INF]  Executed endpoint 'PaymentAPI.Controllers.NavOnePaymentAPI.ConvertProspecttoOwner (PaymentAPI)'
+[2022-08-30 18:25:20.416 +05:30  INF]  Request finished HTTP/2 POST https://localhost:7291/api/NavOnePaymentAPI/ConvertProspecttoOwner?ProspectNo=PR00000019&DateAgreementSent=1999-03-05&DateAgreementReceived=2001-04-03&ClientAgreementDated=2002-08-09&EntityNo=E000009 - 0 - 400 - application/json;+charset=utf-8 95.6514ms
